@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 import { css } from 'emotion'
@@ -29,6 +30,10 @@ const LinkCategory = props => (
     ))}
   </div>
 )
+LinkCategory.propTypes = {
+  title: PropTypes.string.isRequired,
+  elements: PropTypes.array.isRequired,
+}
 
 const LinkEntry = props => (
   <a
@@ -49,6 +54,10 @@ const LinkEntry = props => (
     {props.name}
   </a>
 )
+LinkEntry.propTypes = {
+  location: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+}
 
 export default ({ data }) => (
   <div
