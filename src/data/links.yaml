@@ -1,0 +1,72 @@
+---
+-
+  title: Eszköz
+  elements:
+  - label: GMail
+    location: https://mail.google.com/mail/u/0
+  - label: Naptár
+    location: https://calendar.google.com/calendar/r
+  - label: Térkép
+    location: https://maps.google.com/
+  - label: Connect Box
+    location: http://192.168.0.1 #Igen, a  UPC routere csak plaintext-ben érhető el （；¬＿¬)
+  - label: Wunderlist
+    location: https://wunderlist.com
+  - label: K&H e-bank
+    location: https://ebank.sso.kh.hu/sso-eai-web
+-
+  title: Stream
+  elements:
+  - label: DeviantArt
+    location: https://www.deviantart.com/messages
+  - label: Feedly
+    location: https://feedly.com
+  - label: Player.FM
+    location: https://player.fm/abs96/fm
+  - label: reddit
+    location: https://www.reddit.com
+  - label: SoundCloud
+    location: https://soundcloud.com/stream
+  - label: tumblr
+    location: https://www.tumblr.com/dashboard
+  - label: YouTube
+    location: https://www.youtube.com/feed/subscriptions
+-
+  title: Közösségi
+  elements:
+  - label: Facebook
+    location: https://www.facebook.com
+  - label: Instagram
+    location: https://instagram.com
+  - label: Messenger
+    location: https://www.messenger.com
+  - label: Last.fm
+    location: https://www.last.fm/user/ABS96
+  - label: Twitter
+    location: https://twitter.com
+-
+  title: Tárhely
+  elements:
+  - label: Drive
+    location: https://drive.google.com/drive/u/0/my-drive
+  - label: schdesign
+    location: https://drive.google.com/drive/u/1/my-drive
+  - label: Simonyi
+    location: https://drive.google.com/drive/u/2/my-drive
+  - label: Dropbox
+    location: https://dropbox.com
+  - label: Fotók
+    location: https://photos.google.com
+  - label: Keep
+    location: https://keep.google.com
+  - label: Mentett oldalak
+    location: https://google.com/save/me
+-
+  title: Tanulás
+  elements:
+  - label: Duolingo
+    location: https://www.duolingo.com
+  - label: Neptun
+    location: https://frame.neptun.bme.hu/hallgatoi/login.aspx
+  - label: VIK Wiki
+    location: https://vik.wiki

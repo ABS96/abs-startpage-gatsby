@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  animation: appear .2s ease-out;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
