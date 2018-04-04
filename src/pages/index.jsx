@@ -66,8 +66,7 @@ export default ({ data }) => (
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-content: center;
-      height: 100vh;
+      min-height: 100vh;
     `}
   >
     <div
