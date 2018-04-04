@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import '../layouts/index.css';
+import './index.css';
 import favicon from '../data/favicon.ico';
 
 const TemplateWrapper = ({ children }) => (
