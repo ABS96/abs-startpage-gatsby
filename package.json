@@ -17,7 +17,9 @@
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby", "startpage", "chrome extension"
+    "gatsby",
+    "startpage",
+    "chrome extension"
   ],
   "license": "MIT",
   "scripts": {
