@@ -42,7 +42,7 @@ const LinkEntry = props => (
       text-decoration: none;
       color: black;
       font-size: 1.33em;
-      transition: .2s;
+      transition: .1s;
 
       &:hover {
         color: #222;
