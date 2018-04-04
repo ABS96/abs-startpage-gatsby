@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-yaml": "^1.5.16",
+    "npm": "^5.8.0",
     "react-emotion": "^9.1.0",
     "react-helmet": "^5.2.0"
   },
