@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "abs-startpage-gatsby",
+  "description": "Personal startpage",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "ABS96 <abs@abs.ezw.me>",
   "dependencies": {
     "emotion": "^9.1.0",
     "emotion-server": "^9.1.0",
@@ -17,7 +17,7 @@
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby", "startpage", "chrome extension"
   ],
   "license": "MIT",
   "scripts": {
