@@ -88,6 +88,10 @@ export default ({ data }) => (
   </div>
 )
 
+const onUpdate = () => {
+  chrome.storage.sync.set({key: value});
+}
+
 export const query = graphql`
   query StartpageQuery {
     allLinksYaml {
