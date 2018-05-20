@@ -11,5 +11,6 @@
   },
   "permissions": [
     "storage"
-  ]
+  ],
+  "content_security_policy": "script-src 'self' 'sha256-VjSAe7HPCWNI2tt+wffMkbIe5IgU6bMba5jtT7avsVg=' 'sha256-ulUiaLMdpQt3ReY4q5chVEwqDK0qyyJNatUkqTO9KKE=' 'sha256-0IPVpKK83xxwDZJqUl9Z9w/TaSdYFrEK18BsMil/TQg='; object-src 'self'"
 }
