@@ -1,7 +1,7 @@
 {
   "name": "ABS startpage",
   "description": "Custom Chrome startpage made by ABS, using Gatsby",
-  "version": "1.1.1",
+  "version": "1.1.0",
   "manifest_version": 2,
   "icons": {
     "256": "icon-256.png"
@@ -9,8 +9,5 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "permissions": [
-    "storage"
-  ],
-  "content_security_policy": "script-src 'self' 'sha256-VjSAe7HPCWNI2tt+wffMkbIe5IgU6bMba5jtT7avsVg=' 'sha256-ulUiaLMdpQt3ReY4q5chVEwqDK0qyyJNatUkqTO9KKE=' 'sha256-0IPVpKK83xxwDZJqUl9Z9w/TaSdYFrEK18BsMil/TQg='; object-src 'self'"
+  "content_security_policy": "script-src 'self' 'sha256-9kQ2FYhSh9LRhUiZNlIAgWGWCQPjrRWJ8Dq3VdTXlQs=' 'sha256-MCpIh6Z6De5cpd7jNj1r0F8Lxh+t8NX+HO4Wvfwv7rU=' 'sha256-c205HKzoTA4TC0Yfgit/TH+7BncT0tFZrvnEJkKvDF0='; object-src 'self'"
 }

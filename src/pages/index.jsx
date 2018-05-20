@@ -1,10 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-
+import { loadStats, updateStats } from '../components/statistics.js'
 import { css } from 'emotion'
 
 const titleColor='#BBB'
+
+const buildDatabase = (data) => {
+  console.log(data);
+}
 
 const LinkCategory = props => (
   <div
@@ -37,12 +40,13 @@ LinkCategory.propTypes = {
 
 const LinkEntry = props => (
   <a
+    id={escape(props.name)}
     className={css`
       display: block;
       text-decoration: none;
       color: black;
       font-size: 1.33em;
-      transition: .1s;
+      transition: .1s, color 1s;
 
       &:hover {
         color: #222;
@@ -50,6 +54,7 @@ const LinkEntry = props => (
       }
     `}
     href={props.location}
+    onClick={() => updateStats(props.name)}
   >
     {props.name}
   </a>
@@ -85,12 +90,9 @@ export default ({ data }) => (
         />
       ))}
     </div>
+    {loadStats(data.allLinksYaml.edges)}
   </div>
 )
-
-const onUpdate = () => {
-  chrome.storage.sync.set({key: value});
-}
 
 export const query = graphql`
   query StartpageQuery {
