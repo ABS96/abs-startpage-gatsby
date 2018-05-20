@@ -9,5 +9,8 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "content_security_policy": "script-src 'self' 'sha256-9kQ2FYhSh9LRhUiZNlIAgWGWCQPjrRWJ8Dq3VdTXlQs=' 'sha256-MCpIh6Z6De5cpd7jNj1r0F8Lxh+t8NX+HO4Wvfwv7rU=' 'sha256-c205HKzoTA4TC0Yfgit/TH+7BncT0tFZrvnEJkKvDF0='; object-src 'self'"
+  "permissions":[
+    "storage"
+  ],
+  "content_security_policy": "script-src 'self' 'sha256-OjgCDQb7qbs5S36j3e+JujyhbuFCSHIelZzeN6GX7p8=' 'sha256-n4CQf/YZhbiPKXuWtAVmW/rvW1u2dGDxpacAwaAMc7E=' 'sha256-9kQ2FYhSh9LRhUiZNlIAgWGWCQPjrRWJ8Dq3VdTXlQs='; object-src 'self'"
 }

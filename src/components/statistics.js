@@ -1,47 +1,48 @@
 const settings = {
-  clickThreshold: 10,
+  clickThreshold: 5,
   lightText: 130,
 }
 
 export const loadStats = items => {
-  if (typeof module == 'undefined') {
-    if (!localStorage.getItem('stats')) {
-      let temp = {}
-      items.map(category => {
-        category.node.elements.map(link => {
-          temp[link.label] = 0
-        })
-      })
-      localStorage.setItem('stats', JSON.stringify(temp))
-    }
-
-    const stats = JSON.parse(localStorage.getItem('stats'))
-    let mostClicks = Object.keys(stats).reduce(
-      (acc, curr) => (stats[curr] > acc ? stats[curr] : acc),
-      0
-    )
-
-    if (mostClicks > settings.clickThreshold) {
-      setTimeout(() => {
+  if (typeof chrome !== 'undefined') {
+    chrome.storage.local.get('stats', result => {
+      if (Object.keys(result).length === 0) {
+        let temp = {}
         items.map(category => {
           category.node.elements.map(link => {
-            let value =
-              settings.lightText -
-              stats[link.label] / mostClicks * settings.lightText
-            let color = `rgb(${value},${value},${value})`
-            console.log(escape(link.label))
-            document.getElementById(escape(link.label)).style.color = color
+            temp[link.label] = 0
           })
         })
-      }, 100)
-    }
+        chrome.storage.local.set({ stats: temp })
+      }
+      chrome.storage.local.get('stats', result => {
+        let mostClicks = Object.keys(result.stats).reduce(
+          (acc, curr) => (result.stats[curr] > acc ? result.stats[curr] : acc),
+          0
+        )
+        if (mostClicks > settings.clickThreshold) {
+          setTimeout(() => {
+            items.map(category => {
+              category.node.elements.map(link => {
+                let value =
+                  settings.lightText -
+                  result.stats[link.label] / mostClicks * settings.lightText
+                let color = `rgb(${value},${value},${value})`
+                document.getElementById(escape(link.label)).style.color = color
+              })
+            })
+          }, 100)
+        }
+      })
+    })
   }
 }
 
 export const updateStats = label => {
-  if (typeof module == 'undefined') {
-    const stats = JSON.parse(localStorage.getItem('stats'))
-    stats[label] += 1
-    localStorage.setItem('stats', JSON.stringify(stats))
+  if (typeof chrome !== 'undefined') {
+    chrome.storage.local.get('stats', result => {
+      result.stats[label] += 1
+      chrome.storage.local.set({ stats: result.stats })
+    })
   }
 }
