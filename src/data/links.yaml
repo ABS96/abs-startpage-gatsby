@@ -2,20 +2,16 @@
 -
   title: Eszköz
   elements:
+  - label: Connect Box
+    location: http://192.168.0.1 #Igen, a  UPC routere csak plaintext-ben érhető el （；¬＿¬)
   - label: GMail
     location: https://mail.google.com/mail/u/0
+  - label: K&H e-bank
+    location: https://ebank.sso.kh.hu/sso-eai-web
   - label: Naptár
     location: https://calendar.google.com/calendar/r
   - label: Térkép
     location: https://maps.google.com/
-  - label: Connect Box
-    location: http://192.168.0.1 #Igen, a  UPC routere csak plaintext-ben érhető el （；¬＿¬)
-  - label: Wunderlist
-    location: https://wunderlist.com
-  - label: K&H e-bank
-    location: https://ebank.sso.kh.hu/sso-eai-web
-  - label: eBay
-    location: https://www.ebay.com/myb/PurchaseHistory
 -
   title: Stream
   elements:
@@ -36,14 +32,18 @@
 -
   title: Közösségi
   elements:
+  - label: Behance
+    location: https://www.behance.net/
   - label: Facebook
     location: https://www.facebook.com
   - label: Instagram
     location: https://instagram.com
-  - label: Messenger
-    location: https://www.messenger.com
   - label: Last.fm
     location: https://www.last.fm/user/ABS96
+  - label: Messenger
+    location: https://www.messenger.com
+  - label: Slack
+    location: https://schdesign.slack.com
   - label: Twitter
     location: https://twitter.com
 -
