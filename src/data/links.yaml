@@ -12,6 +12,8 @@
     location: https://calendar.google.com/calendar/r
   - label: Térkép
     location: https://maps.google.com/
+  - label: eBay
+    location: https://www.ebay.com/myb/PurchaseHistory?MyEbay&gbh=1
 -
   title: Stream
   elements:
