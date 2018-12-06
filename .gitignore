@@ -5,3 +5,6 @@ yarn-error.log
 
 # Build directory
 /public
+
+# Personal files
+/src/data/links.yaml

@@ -1,0 +1,29 @@
+---
+-
+  title: Category 1
+  elements:
+  - label: Site 1
+    location: https://foldnfly.com
+  - label: Site 2
+    location: https://github.com
+  - label: Site 3
+    location: https://vik.wiki
+-
+  title: Category 2
+  elements:
+  - label: Site 1
+    location: https://foldnfly.com
+  - label: Site 2
+    location: https://github.com
+  - label: Site 3
+    location: https://vik.wiki
+-
+  title: Category 3
+  elements:
+  - label: Site 1
+    location: https://foldnfly.com
+  - label: Site 2
+    location: https://github.com
+  - label: Site 3
+    location: https://vik.wiki
+-
